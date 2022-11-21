@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background: #7D2AE8;
+}
+
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-container
+{
+    display: block;
+    top: 50%;
+    background: #fff;
+    padding: 30px 30px;
+    border-radius: 20px;
+    width: 350px;
+    transition: all .5s;
+}
+
+
+/* Modal Header */
+.modal-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#modal-header-title
+{
+    font-size: 20px;
+}
+
+.modal-header-icon
+{
+    margin: 0 0px 0 120px;
+    background: #F2F3FB;
+    padding: 5px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #8F8B8A;
+}
+
+.modal-separation-line
+{
+    width: 330px;
+    height: 1px;
+    background: #000;
+    margin: 15px 0;
+    background: #EEEEEE;
+}
+
+
+/* Modal header end */
+
+/* Modal content */
+h2
+{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.icons
+{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i
+{
+    margin: 0 10px;
+    font-size: 20px;
+    padding: 13px 4px;
+}
+
+/* icons */
+.fa-facebook-f
+{
+    color: #1877F2;
+}
+
+.fa-twitter
+{
+    color: #46C1F6;
+}
+
+.fa-instagram
+{
+    color: #E76A94;
+}
+
+.fa-whatsapp
+{
+    color: #57DC99;
+}
+
+.fa-telegram
+{
+    color: #0588CC;
+}
+
+.icons span
+{
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 80px;
+    cursor: pointer;
+}
+
+/* icons containers */
+.facebook-icon i 
+{
+    padding: 13px 8px;
+}
+.facebook-icon
+{
+    border: 1px solid #C2DDFB;
+    transition: all .3s;
+}
+
+.twitter-icon
+{
+    border: 1px solid #b3e6ff;
+    transition: all .3s;
+}
+
+.instagram-icon
+{
+    border: 1px solid #F7CCDA;
+    transition: all .3s;
+}
+
+.whatsapp-icon
+{
+    border: 1px solid #CCF6DB;
+    transition: all .3s;
+}
+
+.telegram-icon
+{
+    border: 1px solid #C2DDFB;
+    transition: all .3s;
+}
+
+
+/* icons container:hover */
+
+.facebook-icon:hover
+{
+    background: #1877F2;
+    color: #fff;
+    transition: all .3s;
+
+}
+
+.facebook-icon:hover i
+{
+    color: #fff;
+    transition: all .3s;
+}
+
+.twitter-icon:hover i
+{
+    color: #fff;
+    transition: all .3s;
+}
+
+.instagram-icon:hover i
+{
+    color: #fff;
+    transition: all .3s;
+}
+
+.whatsapp-icon:hover i
+{
+    color: #fff;
+    transition: all .3s;
+}
+.twitter-icon:hover
+{
+    background: #46C1F6;
+    color: #fff;
+    transition: all .3s;
+}
+
+.instagram-icon:hover
+{
+    background: #E76A94;
+    color: #fff;
+    transition: all .3s;
+}
+
+.whatsapp-icon:hover
+{
+    background: #57DC99;
+    color: #fff;
+    transition: all .3s;
+}
+
+.telegram-icon:hover
+{
+    background: #C2DDFB;
+    transition: all .3s;
+}
+
+/* end icons */
+
+.modal-content-footer-box
+{
+    border-radius: 10px;
+    border: 2px solid #EEEEEE;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-ctn
+{
+    display: inline-block;
+    font-size: 15px;
+    width: 200px;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 0 10px;
+}
+input
+{
+    border: none;
+    outline: none;
+}
+
+.link-ctn::-webkit-scrollbar
+{
+    width: 8px;
+    height: 4px;
+}
+
+.link-ctn::-webkit-scrollbar-thumb
+{
+    border-radius: 70px;
+    background: rgba(70, 193, 246, 0.2);
+}
+
+.link-ctn::-webkit-scrollbar-thumb:hover
+{
+    border-radius: 10px;
+    background: rgba(70, 193, 246, 0.8);
+}
+
+.button-container
+{
+    display: inline-block;
+}
+
+.copy-button
+{
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #7D2AE8;
+    color: #fff;
+}
+
+/* When close */
+
+.modal-container.closed
+{
+    display: none;
+    transition: all .5s;
+}
+
+.fa-bars-ctn.show
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+    color: #fff;
+    background: rgba(133, 244, 255, .4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-bars
+{
+    padding: 20px 22px;
+}
+
+.fa-bars-ctn
+{
+    display: none;
+    transition: all .5s;
+}
+
